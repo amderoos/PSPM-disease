@@ -1,0 +1,49 @@
+*******************************************************************************
+
+  PROGRAM, RUN AND ARGUMENTS
+    Program   : ../../EBT/PSPM-Disease
+    Run       : Q075_TI010_Beta0001_IJ15
+    Arguments :  15000
+
+  MODEL SPECIFIC NOTES
+    Semi-chemostat resource dynamics
+    Disease transmission proportional to numerical abundance
+    
+    Ratio of offspring-adult body size: z = 0.10
+
+
+  USED VALUES FOR CONTROL VARIABLES
+    Time integration method                                            :  RKTSI5
+    Fixed step size or integration accuracy when adaptive              :  1E-07     
+    Cohort cycle time interval                                         :  0.5       
+    Tolerance value, determining identity with zero                    :  1E-05     
+    Maximum integration time/Parameter change period in bifurcation    :  2000.00   
+    Output time interval                                               :  1.00      
+    Complete state output interval, 0 for none                         :  2000.00   
+
+  USED VALUES OF TOLERANCES
+    Minimum allowable number of individuals in cohort                  :  0.0001 0.0001 
+    Relative tolerances for i-state variable #0                        :  0      0      
+                            i-state variable #1                        :  0      0      
+    Absolute tolerances for i-state variable #0                        :  0      0      
+                            i-state variable #1                        :  0      0      
+
+  USED VALUES OF PARAMETERS
+    [ 0] Turn-over rates of resource                                  RHO = 0.1      :  0.1       
+    [ 1] Maximum resource biomass                                    RMAX = 100      :  100       
+    [ 2] Mass of newborn consumer                                      SB = z * SM   :  0.1       
+    [ 3] Mass of adult consumer                                        SM = 1.0      :  1         
+    [ 4] Maximum ingestion rate                                         M = 1.0      :  1         
+    [ 5] Adult/juvenile asymmetry in maximum ingestion rate             Q = 1        :  0.75      
+    [ 6] Half-saturation constant consumer functional response          H = 3        :  3         
+    [ 7] Assimilation efficiency                                    SIGMA = 0.5      :  0.5       
+    [ 8] Maintenance rate all consumers                                TS = 0.1      :  0.1       
+    [ 9] Additional maintenance rate all infected consumers            TI = 0.0      :  0.1       
+    [10] Additional maintenance rate juvenile infected consumers      TIJ = 0.0      :  0         
+    [11] Additional maintenance rate adult infected consumers         TIA = 0.0      :  0         
+    [12] Background mortality rate all consumers                      MUS = 0.015    :  0.015     
+    [13] Additional mortality rate all infected consumers             MUI = 0.0      :  0         
+    [14] Additional mortality rate juvenile infected consumers       MUIJ = 0.0      :  0         
+    [15] Additional mortality rate adult infected consumers          MUIA = 0.0      :  0         
+    [16] Density-dependent transmission coefficient                  BETA = 5.0E-4   :  0.001     
+*******************************************************************************
